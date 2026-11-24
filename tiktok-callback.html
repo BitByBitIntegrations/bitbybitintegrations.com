@@ -1,0 +1,10 @@
+<!doctype html>
+<!-- TikTok only allows https redirect URLs, so this tiny page lives on bitbybitintegrations.com
+     and just hands the login code back to the uploader running on your Mac. -->
+<html><head><meta charset="utf-8"><title>Connecting TikTok…</title></head>
+<body style="font:16px system-ui;background:#0d0f12;color:#e7eaf0;display:grid;place-items:center;height:100vh;margin:0">
+<p>Sending you back to the uploader…</p>
+<script>
+  location.replace("http://localhost:8765/oauth/tiktok" + location.search);
+</script>
+</body></html>
