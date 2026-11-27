@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Platform Uploader | Bit By Bit Integrations</title>
+  <link rel="icon" type="image/jpeg" href="images/Final_bitbybit_logo_sharp.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font:17px/1.65 'DM Sans',sans-serif; color:#0d1117; background:#f7f8fa; }
+    main { max-width:760px; margin:0 auto; padding:56px 24px 80px; background:#fff; min-height:100vh; }
+    a { color:#1a56e8; }
+    h1 { font-family:'Syne',sans-serif; font-size:2.2rem; margin:0 0 4px; }
+    h2 { font-family:'Syne',sans-serif; font-size:1.2rem; margin:32px 0 8px; }
+    .muted { color:#5b6b85; font-size:.95rem; }
+    ul { padding-left:22px; }
+      .icon { width:96px; height:96px; border-radius:22px; display:block; margin:8px 0 16px; }
+    ol li { margin-bottom:6px; }
+  </style>
+</head>
+<body>
+<main>
+  <p class="muted"><a href="/">← Bit By Bit Integrations</a></p>
+  <img class="icon" src="images/all-platform-uploader-icon.png" alt="All Platform Uploader icon">
+  <h1>All Platform Uploader</h1>
+  <p class="muted">A desktop tool by Bit By Bit Integrations LLC</p>
+
+  <p>All Platform Uploader helps a creator repost their own short videos from Instagram to their own
+  YouTube channel, Facebook Page and TikTok account, on a schedule they choose. It runs on the creator's own
+  computer, with a dashboard at <code>localhost</code>, and only works with accounts the creator connects
+  themselves.</p>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>The creator keeps their original videos in a Google Drive folder and connects YouTube, their
+      Facebook Page and TikTok from the dashboard.</li>
+    <li>The app matches each video to its Instagram post so it can reuse the creator's own caption.</li>
+    <li>At each scheduled time it uploads the next video: as a YouTube Short, as a Facebook Reel, and to
+      the creator's <strong>TikTok drafts</strong>.</li>
+    <li>For TikTok, the creator gets a notification with the caption, opens the draft in the TikTok app,
+      adds a sound, pastes the caption and posts it themselves. The app never publishes to TikTok on its own.</li>
+    <li>To avoid duplicates, the app reads the creator's list of public TikTok videos and skips any video
+      that's already there.</li>
+  </ol>
+
+  <h2>TikTok features used</h2>
+  <ul>
+    <li><strong>Login Kit</strong> (<code>user.info.basic</code>): the creator signs in with TikTok, and
+      the dashboard shows which account is connected.</li>
+    <li><strong>Content Posting API, upload to drafts</strong> (<code>video.upload</code>): sends the video
+      to the creator's TikTok inbox as a draft.</li>
+    <li><strong>Display API</strong> (<code>video.list</code>): reads the creator's public videos so the
+      app doesn't send a draft of something already posted.</li>
+  </ul>
+
+  <h2>Legal</h2>
+  <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> ·
+  <a href="mailto:bitbybitintegrationsllc@gmail.com">bitbybitintegrationsllc@gmail.com</a></p>
+</main>
+</body>
+</html>
