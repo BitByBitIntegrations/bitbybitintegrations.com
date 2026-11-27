@@ -20,7 +20,7 @@
 <main>
   <p class="muted"><a href="/">← Bit By Bit Integrations</a></p>
   <h1>Privacy Policy</h1>
-  <p class="muted">Last updated November 23, 2026</p>
+  <p class="muted">Last updated November 27, 2026</p>
 
   <p>This policy covers <strong>All Platform Uploader</strong>, a tool made by Bit By Bit Integrations LLC
   (“we”). It reposts a creator’s own short videos from Instagram to their own YouTube, Facebook Page and
@@ -36,8 +36,12 @@
     <li><strong>Instagram and Facebook</strong> (through Meta): your own Instagram reels’ captions, dates,
       links and video files, used to match each video to its caption, and permission to post Reels to the
       Facebook Page you connect.</li>
-    <li><strong>TikTok</strong>: permission to send videos to your TikTok drafts (inbox). It cannot publish
-      on its own.</li>
+    <li><strong>TikTok</strong> (Login Kit and Content Posting API): your basic profile info
+      (<code>user.info.basic</code>: open ID, display name, avatar) to show which account is connected;
+      permission to send videos to your TikTok drafts (<code>video.upload</code>), where you add a sound,
+      edit and post them yourself, since the app cannot publish on its own; and a read-only list of your
+      public TikTok videos (<code>video.list</code>: captions, dates, lengths, links), used only so the app
+      doesn't send you a draft of a video that's already on your TikTok.</li>
   </ul>
 
   <h2>How the data is used</h2>
