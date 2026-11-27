@@ -14,61 +14,98 @@
     h2 { font-family:'Syne',sans-serif; font-size:1.2rem; margin:32px 0 8px; }
     .muted { color:#5b6b85; font-size:.95rem; }
     ul { padding-left:22px; }
+    ul ul { margin:6px 0; }
+    li { margin-bottom:4px; }
   </style>
 </head>
 <body>
 <main>
-  <p class="muted"><a href="/">← Bit By Bit Integrations</a></p>
+  <p class="muted"><a href="/">← Bit By Bit Integrations</a> · <a href="all-platform-uploader.html">All Platform Uploader</a> · <a href="terms.html">Terms of Service</a></p>
   <h1>Privacy Policy</h1>
-  <p class="muted">Last updated November 27, 2026</p>
+  <p class="muted">Effective and last updated November 27, 2026</p>
 
-  <p>This policy covers <strong>All Platform Uploader</strong>, a tool made by Bit By Bit Integrations LLC
-  (“we”). It posts a creator’s own short videos to their own YouTube, Facebook Page and
-  TikTok accounts on a schedule they choose. It runs on the creator’s own computer and is used only by the people who connect their
-  own accounts to it.</p>
+  <p>This Privacy Policy explains how <strong>All Platform Uploader</strong> (the “App”), made by
+  <strong>Bit By Bit Integrations LLC</strong> (“we”, “us”), handles information when you use it. The App is
+  a desktop tool that posts your own short videos to your own YouTube channel, Facebook Page and TikTok
+  account on a schedule you choose. It runs on your own computer and works only with accounts you connect
+  yourself.</p>
 
-  <h2>What the app accesses</h2>
+  <h2>1. Information the App accesses</h2>
+  <p>The App only accesses what you authorize when you connect each account, and only for the purposes in
+  section 2.</p>
   <ul>
-    <li><strong>Google Drive</strong> (read-only): the list of videos in the one folder you choose, and the
-      video files themselves when it is time to upload them.</li>
-    <li><strong>YouTube</strong>: permission to upload videos to your channel and set their title,
-      description and tags.</li>
-    <li><strong>Instagram and Facebook</strong> (through Meta): your own Instagram reels’ captions, dates,
-      links and video files, used to match each video to its caption, and permission to post Reels to the
-      Facebook Page you connect.</li>
-    <li><strong>TikTok</strong> (Login Kit and Content Posting API): your basic profile info
-      (<code>user.info.basic</code>: open ID, display name, avatar) to show which account is connected;
-      permission to send videos to your TikTok drafts (<code>video.upload</code>), where you add a sound,
-      edit and post them yourself, since the app cannot publish on its own; and a read-only list of your
-      public TikTok videos (<code>video.list</code>: captions, dates, lengths, links), used only so the app
-      doesn't send you a draft of a video that's already on your TikTok.</li>
+    <li><strong>TikTok</strong> (through TikTok Login Kit, the Content Posting API and the Display API):
+      <ul>
+        <li><code>user.info.basic</code>: your TikTok open ID, display name and avatar, to show which account is connected.</li>
+        <li><code>video.upload</code>: permission to send your videos to your TikTok drafts (inbox). You review,
+          edit, add a sound and post each draft yourself in the TikTok app. The App never publishes to TikTok on its own.</li>
+        <li><code>video.list</code>: a read-only list of your public TikTok videos (caption, date, length, link), used
+          only to avoid sending you a draft of a video that is already on your TikTok.</li>
+      </ul></li>
+    <li><strong>Google</strong>: read-only access to the one Google Drive folder you choose (the list of videos and the
+      video files), and permission to upload videos to your YouTube channel and set their title, description,
+      thumbnail and privacy setting.</li>
+    <li><strong>Meta</strong>: your own Instagram posts’ captions, dates, links, cover images and video files, used to
+      reuse captions you already wrote, and permission to post Reels to the Facebook Page you connect.</li>
+    <li><strong>Notifications</strong>: if you turn this on, the App uses the Messages app on your computer to text
+      your own phone number the caption for each TikTok draft.</li>
+  </ul>
+  <p>The App does not access your TikTok messages, followers, likes, comments, analytics or any other
+  account’s data, and it does not collect payment information, contacts or location.</p>
+
+  <h2>2. How the information is used</h2>
+  <ul>
+    <li>to upload your videos to the accounts you connected, at the times you scheduled;</li>
+    <li>to reuse the captions you wrote, and to text them to you for your TikTok drafts;</li>
+    <li>to avoid duplicate posts, and to show you the status of each upload on the App’s dashboard.</li>
+  </ul>
+  <p>We do not use your information for advertising, profiling, selling, or training any AI or machine-learning
+  model, and we do not combine TikTok data with data from other sources except to pair your own videos with
+  your own captions.</p>
+
+  <h2>3. Where information is stored, and for how long</h2>
+  <p>Everything the App handles (login tokens, the list of your videos and captions, upload history and
+  logs) is stored only on your own computer, in the App’s local database. Bit By Bit Integrations LLC does
+  not run a server that receives, stores or can see your data. Video files are downloaded to your computer
+  only while they are being uploaded, then deleted. Your information stays on your computer until you
+  disconnect an account or delete the App, which removes it.</p>
+
+  <h2>4. Sharing</h2>
+  <p>We do not sell, rent, trade or share your information with anyone. The App sends information only
+  to the services you connected (TikTok, Google/YouTube, Meta), and only to carry out what you asked it to do,
+  plus Apple’s Messages service if you turn on caption texts. Those services handle the information under
+  their own policies: <a href="https://www.tiktok.com/legal/privacy-policy">TikTok</a>,
+  <a href="https://policies.google.com/privacy">Google</a>, <a href="https://www.facebook.com/privacy/policy">Meta</a>,
+  <a href="https://www.apple.com/legal/privacy/">Apple</a>. We may disclose information only if the law requires it.</p>
+  <p>The App’s use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+  Policy</a>, including the Limited Use requirements. Use of YouTube is subject to the
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+
+  <h2>5. Security</h2>
+  <p>Data stays on your computer, and the App connects to each service over encrypted HTTPS using the
+  official sign-in (OAuth) for each platform. The App never sees or stores your passwords. Keep your computer
+  protected with a login password.</p>
+
+  <h2>6. Your choices: disconnecting and deleting data</h2>
+  <ul>
+    <li><strong>TikTok</strong>: remove the App in the TikTok app under Settings and privacy → Security and permissions → Apps and services permissions.</li>
+    <li><strong>Google/YouTube</strong>: remove it at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li><strong>Meta</strong>: remove it in Facebook Settings → Business integrations.</li>
+    <li>Deleting the App from your computer deletes everything it stored. You can also email us to ask how to
+      delete specific data, and we will respond within 30 days.</li>
   </ul>
 
-  <h2>How the data is used</h2>
-  <p>Only to do what you set the app up to do: find your videos, pair each one with the caption you already wrote for it,
-  and upload it to your other accounts on the schedule you pick. Videos are downloaded temporarily to your
-  computer for uploading and deleted afterwards.</p>
+  <h2>7. Children</h2>
+  <p>The App is not directed to children and is not meant for anyone under 18, or the minimum age required
+  by each connected platform. We do not knowingly process information from children.</p>
 
-  <h2>Where it is stored</h2>
-  <p>Everything (login tokens, the list of videos and captions, upload history) is stored on your own
-  computer. We do not run a server that collects it, and it is not sent anywhere except to the platforms
-  you connected (Google, Meta, TikTok) when the app talks to them on your behalf.</p>
+  <h2>8. Changes to this policy</h2>
+  <p>If we change this policy, we will update the date at the top of this page. Material changes will be
+  noted on the <a href="all-platform-uploader.html">App’s page</a>.</p>
 
-  <h2>Sharing</h2>
-  <p>We do not sell, rent or share your data with anyone, and we do not use it for advertising or to train
-  any AI model.</p>
-
-  <p>All Platform Uploader’s use and transfer of information received from Google APIs adheres to the
-  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
-  Policy</a>, including the Limited Use requirements.</p>
-
-  <h2>Removing access and deleting data</h2>
-  <p>You can disconnect the app at any time from
-  <a href="https://myaccount.google.com/permissions">your Google account permissions</a>, Facebook’s
-  Business Integrations settings, or TikTok’s app permissions. Uninstalling the app from your computer
-  deletes everything it stored. To ask us anything about your data, email
-  <a href="mailto:bitbybitintegrationsllc@gmail.com">bitbybitintegrationsllc@gmail.com</a>.</p>
-
+  <h2>9. Contact</h2>
+  <p>Bit By Bit Integrations LLC · <a href="/">bitbybitintegrations.com</a> · <a href="mailto:bitbybitintegrationsllc@gmail.com">bitbybitintegrationsllc@gmail.com</a></p>
 </main>
 </body>
 </html>
